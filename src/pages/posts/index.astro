@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { formatPostDate, getPostPath, sortPostsByDate } from "@/utils/posts";
+
+const posts = sortPostsByDate(await getCollection("blog"));
+---
+
+<BaseLayout pageTitle="Posts | shenanigans.dog">
+  <section>
+    <div class="lbl"><span class="h">#</span> Shenanigans Archive</div>
+    <ul class="now">
+      {
+        posts.map((post) => (
+          <li>
+            <span class="k">{formatPostDate(post.data.pubDate)}</span>
+            <span class="v">
+              <a href={getPostPath(post)}>{post.data.title}</a>
+            </span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
