@@ -11,3 +11,5 @@ All commands are run from the root of the project:
 | `npm run build`                      | Build the production site to `./dist/`     |
 | `npm run preview`                    | Preview the build locally before deploying |
 | `npx @biomejs/biome check --write`   | Lint and auto-fix all files                |
+| `npm run deploy`                     | Build and deploy via `wrangler --x-new-config` |
+| `npm run cf:dev`                     | Build and serve the Worker locally with the experimental config |

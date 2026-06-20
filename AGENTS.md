@@ -7,7 +7,9 @@ This is the personal site for Bradley Reynolds at [shenanigans.dog](https://shen
 - **Framework:** [Astro](https://astro.build) (static site)
 - **Language:** TypeScript (`strictest` tsconfig)
 - **Linter/Formatter:** [Biome](https://biomejs.dev) — do **not** use Prettier or ESLint
-- **Deploy:** Cloudflare (via `wrangler.jsonc`)
+- **Deploy:** Cloudflare via the experimental TypeScript config
+  (`cloudflare.config.ts` for runtime + `wrangler.config.ts` for tooling),
+  deployed with `wrangler --x-new-config` (see `npm run deploy`).
 - **Node:** >= 24.12.0
 
 ## Project structure
@@ -23,7 +25,8 @@ This is the personal site for Bradley Reynolds at [shenanigans.dog](https://shen
 │   ├── styles/        # global.css
 │   └── constants.ts   # repo URL + git commit hash
 ├── astro.config.mjs
-└── wrangler.jsonc
+├── cloudflare.config.ts   # Worker runtime config (--x-new-config)
+└── wrangler.config.ts     # Worker tooling/assets config (--x-new-config)
 ```
 
 ## Commands

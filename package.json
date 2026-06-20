@@ -6,13 +6,16 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "npm run build && wrangler deploy --x-new-config",
+    "cf:dev": "npm run build && wrangler dev --x-new-config"
   },
   "dependencies": {
     "astro": "^7.0.0-beta.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.0"
+    "@biomejs/biome": "2.5.0",
+    "wrangler": "^4.103.0"
   },
   "engines": {
     "node": ">=24.12.0"
