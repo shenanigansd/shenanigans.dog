@@ -8,8 +8,7 @@ This is the personal site for Bradley Reynolds at [shenanigans.dog](https://shen
 - **Language:** TypeScript (`strictest` tsconfig)
 - **Linter/Formatter:** [Biome](https://biomejs.dev) — do **not** use Prettier or ESLint
 - **Deploy:** Cloudflare via the experimental TypeScript config
-  (`cloudflare.config.ts` for runtime + `wrangler.config.ts` for tooling),
-  deployed with `wrangler --x-new-config` (see `npm run deploy`).
+  (`cloudflare.config.ts` for runtime + `wrangler.config.ts` for tooling).
 - **Node:** >= 24.12.0
 
 ## Project structure
