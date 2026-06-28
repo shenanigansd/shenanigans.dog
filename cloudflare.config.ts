@@ -2,7 +2,7 @@ import { bindings, defineWorker } from "wrangler/experimental-config";
 
 export default defineWorker({
   name: "shenanigans-dog",
-  compatibilityDate: "2026-06-08",
+  compatibilityDate: "2028-04-30",
   domains: ["shenanigans.dog"],
   previewUrls: true,
   env: {
