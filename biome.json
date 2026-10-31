@@ -36,5 +36,15 @@
         "organizeImports": "on"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["src/content/**/*.md"],
+      "markdown": {
+        "formatter": {
+          "enabled": false
+        }
+      }
+    }
+  ]
 }
