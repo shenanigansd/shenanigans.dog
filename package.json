@@ -9,12 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.5"
+    "astro": "^7.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
-    "@cloudflare/config": "^0.23.0",
-    "wrangler": "^4.147.0"
+    "@biomejs/biome": "2.6.3",
+    "@cloudflare/config": "^0.28.1",
+    "wrangler": "^4.154.0"
   },
   "engines": {
     "node": ">=24.12.0"
